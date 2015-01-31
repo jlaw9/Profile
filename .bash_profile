@@ -2,16 +2,22 @@
 
 set -o vi
 
+# source the colors
+source ~/jeff/Profile/.bash_colors
+
 # quick commands
 alias b='cd .. && ls'
 alias bb='cd ../.. && ls'
-alias B='cd - && ls'
+alias B="echo -e \"${BLUE}`cd -`${NC}\" && ls"
 alias cls='clear && pwd && ls'
 alias ll='ls -alh'
 alias wl='wc -l *'
 alias Q='exit'
 alias v='vim -O'
 alias t='tail -f'
+#alias c='cd $1 && pwd && ls'
+function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
+alias t2="echo -e \"${RED}Hello \`pwd\`${NC} \"" 
 
 # update this profile
 alias b2='vim ~/jeff/Profile/.bash_profile'
