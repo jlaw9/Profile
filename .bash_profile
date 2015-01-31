@@ -13,6 +13,7 @@ alias Q='exit'
 alias v='vim -O'
 alias t='tail -f'
 
+# update this profile
 alias b2='vim ~/jeff/Profile/.bash_profile'
 alias s2='source ~/jeff/Profile/.bash_profile'
 # gives the current ip address
@@ -21,7 +22,14 @@ alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f
 #github
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
-gp="git --git-dir=~/jeff/Profile/.git pull"
+alias gp="git --git-dir=~/jeff/Profile/.git pull"
+alias ga="git --git-dir=~/jeff/Profile/.git add ~/jeff/Profile/.bash_profile && \
+	git --git-dir=~/jeff/Profile/.git commit -m 'update' && \
+	git --git-dir=~/jeff/Profile/.git push  && \
+	git --git-dir=~/jeff/Profile/.git pull"
+
+# Directories
+QCDIR="/rawdata/legos/scripts/QC"
 
 #Proton Servers:
 Pluto="ionadmin@192.168.200.42"
