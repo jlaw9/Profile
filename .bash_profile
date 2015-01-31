@@ -18,9 +18,7 @@ alias wl='wc -l *'
 alias Q='exit'
 alias v='vim -O'
 alias t='tail -f'
-#alias c='cd $1 && pwd && ls'
-#function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
-alias t2="echo -e \"${RED}Hello \`pwd\`${NC} \"" 
+function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 
 # update this profile
 alias b2='vim ~/jeff/Profile/.bash_profile'
@@ -36,6 +34,11 @@ alias ga="git --git-dir=/home/ionadmin/jeff/Profile/.git add /home/ionadmin/jeff
 	git --git-dir=/home/ionadmin/jeff/Profile/.git commit -m 'update' && \
 	git --git-dir=/home/ionadmin/jeff/Profile/.git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
 	git --git-dir=/home/ionadmin/jeff/Profile/.git pull"
+alias gpt="git --git-dir=/results/jeff/Profile/.git pull && s2"
+alias gat="git --git-dir=/results/jeff/Profile/.git add /results/jeff/Profile/.bash_profile && \
+	git --git-dir=/results/jeff/Profile/.git commit -m 'update' && \
+	git --git-dir=/results/jeff/Profile/.git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
+	git --git-dir=/results/jeff/Profile/.git pull"
 
 # Directories
 QCDIR="/rawdata/legos/scripts/QC"
