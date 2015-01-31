@@ -19,7 +19,7 @@ alias s2='source ~/jeff/Profile/.bash_profile'
 # gives the current ip address
 alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f2 | head -n 1 | cut -d' ' -f1"
 
-#github
+# github dir and commands
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
 alias gp="git --git-dir=~/jeff/Profile/.git pull"
