@@ -24,6 +24,7 @@ function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 
 # update this profile
 alias b2='vim ~/jeff/Profile/.bash_profile'
+alias c2='vim ~/jeff/Profile/.bash_colors'
 alias s2='source ~/jeff/Profile/.bash_profile'
 
 # github dir and commands
