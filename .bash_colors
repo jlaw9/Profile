@@ -1,10 +1,10 @@
 # .bashrc
 
-export TERM=xterm-color
+#export TERM=xterm-color
 
-export GREP_OPTIONS='--color=auto' GREP_COLOR='0;31'
+#export GREP_OPTIONS='--color=auto' GREP_COLOR='0;31'
 
-export CLICOLOR=1;
+#export CLICOLOR=1;
 
 # Define Colors
 export BLACK='\033[0;30m'
@@ -25,9 +25,11 @@ export LGRAY='\033[0;37m'
 export WHITE='\033[1;37m'
 export NC='\033[0m' # No Color
 
-alias colorslist="set | egrep '\w*'"  # lists all the colors
+#alias colorslist="set | egrep '\w*'"  # lists all the colors
 
 #export PROMPT_COMMAND='echo -ne "\\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\\007"'
 #export PS1="\\[${GREEN}\\]\\w > \\[${NC}\\]" # puts
-export PS1="\\[${LGREEN}\\]\\u - \W$ \\[${NC}\\]"  # Primary prompt with user, and host
+#export PS1="\\[${LGREEN}\\]\\u - \W$ \\[${NC}\\]"  # Primary prompt with user, and host
+#git push --repo "https://jlaw9@github.com/jlaw9/Profile.git"
+export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
