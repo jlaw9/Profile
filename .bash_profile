@@ -2,13 +2,16 @@
 
 set -o vi
 
+if [ -f ~/jeff/.bash_profile ]; then
+	source ~/jeff/.bash_profile
+fi
 # source the colors
 source ~/jeff/Profile/.bash_colors
 
 # quick commands
 alias b='cd .. && ls'
 alias bb='cd ../.. && ls'
-alias B="echo -e \"${BLUE}`cd -`${NC}\" && ls"
+alias B="cd - && ls"
 alias cls='clear && pwd && ls'
 alias ll='ls -alh'
 alias wl='wc -l *'
@@ -16,7 +19,7 @@ alias Q='exit'
 alias v='vim -O'
 alias t='tail -f'
 #alias c='cd $1 && pwd && ls'
-function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
+#function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 alias t2="echo -e \"${RED}Hello \`pwd\`${NC} \"" 
 
 # update this profile
@@ -28,11 +31,11 @@ alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f
 # github dir and commands
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
-alias gp="git --git-dir=~/jeff/Profile/.git pull"
-alias ga="git --git-dir=~/jeff/Profile/.git add ~/jeff/Profile/.bash_profile && \
-	git --git-dir=~/jeff/Profile/.git commit -m 'update' && \
-	git --git-dir=~/jeff/Profile/.git push  && \
-	git --git-dir=~/jeff/Profile/.git pull"
+alias gp="git --git-dir=/home/ionadmin/jeff/Profile/.git pull"
+alias ga="git --git-dir=/home/ionadmin/jeff/Profile/.git add /home/ionadmin/jeff/Profile/.bash_profile && \
+	git --git-dir=/home/ionadmin/jeff/Profile/.git commit -m 'update' && \
+	git --git-dir=/home/ionadmin/jeff/Profile/.git push  && \
+	git --git-dir=/home/ionadmin/jeff/Profile/.git pull"
 
 # Directories
 QCDIR="/rawdata/legos/scripts/QC"
