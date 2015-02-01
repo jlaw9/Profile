@@ -34,8 +34,8 @@ export NC='\033[0m' # No Color
 #git push --repo "https://jlaw9@github.com/jlaw9/Profile.git"
 ip=`/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f2 | head -n 1 | cut -d' ' -f1`
 if [ "$ip" = "" ]; then
-	export PS1="\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+	export PS1="\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[0m\]\$ "
 else
-	export PS1="\[\033[01;32m\]\u@${ip}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+	export PS1="\[\033[01;32m\]\u@${ip}\[\033[00m\]:\[\033[01;34m\]\w\[\033[0m\]\$ "
 fi
 
