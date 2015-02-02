@@ -2,6 +2,8 @@
 
 set -o vi
 
+# gives the current ip address
+alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f2 | head -n 1 | cut -d' ' -f1"
 if [ -f ~/jeff/.bash_profile ]; then
 	source ~/jeff/.bash_profile
 fi
@@ -22,9 +24,8 @@ function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 
 # update this profile
 alias b2='vim ~/jeff/Profile/.bash_profile'
+alias c2='vim ~/jeff/Profile/.bash_colors'
 alias s2='source ~/jeff/Profile/.bash_profile'
-# gives the current ip address
-alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f2 | head -n 1 | cut -d' ' -f1"
 
 # github dir and commands
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
