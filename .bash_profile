@@ -22,7 +22,14 @@ alias v='vim -O'
 alias t='tail -f'
 function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 
+# templates
+alias template='cp ~/jeff/Profile/template.py . && vim template.py'
+alias edit_template='vim ~/jeff/Profile/template.py'
+alias qsub_template="cp ~/jeff/Profile/qsub_template.sh . && vim qsub_template.py"
+alias edit_qsub_template="vim ~/jeff/Profile/qsub_template.sh"
+
 # update this profile
+alias p2='cd ~/jeff/Profile/'
 alias b2='vim ~/jeff/Profile/.bash_profile'
 alias c2='vim ~/jeff/Profile/.bash_colors'
 alias s2='source ~/jeff/Profile/.bash_profile'
