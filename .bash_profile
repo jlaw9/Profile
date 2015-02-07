@@ -38,15 +38,11 @@ alias s2='source ~/jeff/Profile/.bash_profile'
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
 alias gp="git --git-dir=/home/ionadmin/jeff/Profile/.git pull && s2"
-alias ga="git --git-dir=/home/ionadmin/jeff/Profile/.git add /home/ionadmin/jeff/Profile/.bash_profile && \
-	git --git-dir=/home/ionadmin/jeff/Profile/.git add /home/ionadmin/jeff/Profile/.bash_colors && \
-	git --git-dir=/home/ionadmin/jeff/Profile/.git commit -m 'update' && \
+alias ga="git --git-dir=/home/ionadmin/jeff/Profile/.git commit -a -m 'update' && \
 	git --git-dir=/home/ionadmin/jeff/Profile/.git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
 	git --git-dir=/home/ionadmin/jeff/Profile/.git pull"
 alias gpt="git --git-dir=/results/jeff/Profile/.git pull && s2"
-alias gat="git --git-dir=/results/jeff/Profile/.git add /results/jeff/Profile/.bash_profile && \
-	git --git-dir=/results/jeff/Profile/.git add /results/jeff/Profile/.bash_colors && \
-	git --git-dir=/results/jeff/Profile/.git commit -m 'update' && \
+alias gat="git --git-dir=/results/jeff/Profile/.git commit -a -m 'update' && \
 	git --git-dir=/results/jeff/Profile/.git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
 	git --git-dir=/results/jeff/Profile/.git pull"
 
