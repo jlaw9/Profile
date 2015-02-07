@@ -25,7 +25,7 @@ function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
 # templates
 alias template='cp ~/jeff/Profile/template.py . && vim template.py'
 alias edit_template='vim ~/jeff/Profile/template.py'
-alias qsub_template="cp ~/jeff/Profile/qsub_template.sh . && vim qsub_template.py"
+alias qsub_template="cp ~/jeff/Profile/qsub_template.sh . && vim qsub_template.sh"
 alias edit_qsub_template="vim ~/jeff/Profile/qsub_template.sh"
 
 # update this profile
