@@ -37,15 +37,12 @@ alias s2='source ~/jeff/Profile/.bash_profile'
 # github dir and commands
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
-alias gp="cd /home/ionadmin/jeff/Profile git pull && s2 && cd -"
-alias ga="cd /home/ionadmin/jeff/Profile && \
+alias gp="cd ~/jeff/Profile && git pull && s2 && cd -"
+alias ga="cd ~/jeff/Profile && \
+	git pull && \
 	git commit -a -m 'update' && \
 	git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
 	git pull && cd -"
-alias gpt="cd /home/ionadmin/jeff/Profile git --git-dir=/results/jeff/Profile/.git pull && s2"
-alias gat="cd /home/ionadmin/jeff/Profile git --git-dir=/results/jeff/Profile/.git commit -a -m 'update' && \
-	git --git-dir=/results/jeff/Profile/.git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
-	git --git-dir=/results/jeff/Profile/.git pull"
 
 # Directories
 QCDIR="/rawdata/legos/scripts/QC"
