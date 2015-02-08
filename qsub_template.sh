@@ -16,3 +16,4 @@
 #$ -cwd
 
 
+echo "job finished with a status of $?" | ssmtp -vvv jlaw@childhooddiseases.org
