@@ -45,7 +45,7 @@ alias ga="cd ~/jeff/Profile && \
 	git pull && cd -"
 
 # Directories
-QCDIR="/rawdata/legos/scripts/QC"
+QC_DIR="/rawdata/legos/scripts/QC"
 
 #Proton Servers:
 Pluto="ionadmin@192.168.200.42"
