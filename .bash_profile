@@ -20,7 +20,7 @@ alias wl='wc -l *'
 alias Q='exit'
 alias v='vim -O'
 alias t='tail -f'
-function c() { cd "$1" && echo -e "${BLUE}${PWD}${NC}" && ls ;}
+function c() { cd "$1" && ls ;}
 
 # templates
 alias template='cp ~/jeff/Profile/template.py . && vim template.py'
