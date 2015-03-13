@@ -30,8 +30,8 @@ alias edit_qsub_template="vim ~/jeff/Profile/qsub_template.sh"
 
 # update this profile
 alias p2='cd ~/jeff/Profile/'
-alias b2='vim ~/jeff/Profile/.bash_profile'
-alias c2='vim ~/jeff/Profile/.bash_colors'
+alias b2='vim ~/jeff/Profile/.bash_profile && source ~/jeff/Profile/.bash_profile'
+alias c2='vim ~/jeff/Profile/.bash_colors && source ~/jeff/Profile/.bash_colors'
 alias s2='source ~/jeff/Profile/.bash_profile'
 
 # github dir and commands
