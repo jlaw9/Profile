@@ -1,6 +1,9 @@
 #Jeff's bash profile
 
 set -o vi
+shopt -s histappend
+HISTFILESIZE=1000000
+HISTFILE=1000000
 
 # gives the current ip address
 alias iam="/sbin/ifconfig | grep 'inet addr:' | grep -v "127.0.0.1" | cut -d: -f2 | head -n 1 | cut -d' ' -f1"
