@@ -74,6 +74,8 @@ alias sinister="ssh ionadmin@192.168.200.46"
 Robinhood="ionadmin@192.168.200.68"
 alias robinhood="ssh ionadmin@192.168.200.68"
 
-alias lam="ssh ionadmin@192.168.200.214"
-Lam="ionadmin@192.168.200.214"
+alias lam="ssh ionadmin@192.168.200.183"
+Lam="ionadmin@192.168.200.183"
+#alias lam="ssh ionadmin@192.168.200.214"
+#Lam="ionadmin@192.168.200.214"
 
