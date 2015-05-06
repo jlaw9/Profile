@@ -26,6 +26,8 @@ alias v='vim -O'
 alias t='tail -f'
 function c() { cd "$1" && ls ;}
 
+function create() { echo "alias $1=\"c $PWD\"" >> ~/jeff/.bash_profile; source ~/.bash_profile; }
+
 # templates
 alias template='cp ~/jeff/Profile/template.py . && vim template.py'
 alias edit_template='vim ~/jeff/Profile/template.py'
