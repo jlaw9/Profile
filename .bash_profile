@@ -44,11 +44,15 @@ alias s2='source ~/jeff/Profile/.bash_profile'
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
 alias gp="cd ~/jeff/Profile && git pull && s2 && cd -"
-alias ga="cd ~/jeff/Profile && \
+alias gpa="cd ~/jeff/Profile && \
 	git pull && \
 	git commit -a -m 'update' && \
 	git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\" && \
 	git pull && cd -"
+alias gita="git pull && \
+	git commit -a -m 'update' && \
+	git push && \
+	git pull"
 
 # Directories
 QC_DIR="/rawdata/legos/scripts/QC"
