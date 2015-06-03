@@ -28,6 +28,8 @@ function c() { cd "$1" && ls ;}
 
 function create() { echo "alias $1=\"c $PWD\"" >> ~/jeff/.bash_profile; source ~/.bash_profile || source ~/.bashrc; }
 
+function gv() { git pull; sleep .5; vim "$1"; }
+
 # templates
 alias template='cp ~/jeff/Profile/template.py . && vim template.py'
 alias edit_template='vim ~/jeff/Profile/template.py'
@@ -73,6 +75,9 @@ PGM="ionadmin@130.132.19.237"
 alias pgm="ssh ionadmin@130.132.19.237"
 Mars="ionadmin@192.168.200.43"
 alias mars="ssh ionadmin@192.168.200.43"
+alias compute2="ssh ionadmin@192.168.200.44"
+alias compute3="ssh ionadmin@192.168.200.20"
+alias babylon="ssh cbeckius@192.168.200.40"
 Brevity="ionadmin@192.168.200.45"
 alias brevity="ssh ionadmin@192.168.200.45"
 Sinister="ionadmin@192.168.200.46"
