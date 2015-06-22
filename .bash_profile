@@ -26,7 +26,7 @@ alias v='vim -O'
 alias t='tail -f'
 function c() { cd "$1" && ls ;}
 
-function create() { echo "alias $1=\"c $PWD\"" >> ~/jeff/.bash_profile; source ~/.bash_profile || source ~/.bashrc; }
+function create() { echo "alias $1=\"c $PWD\"" >> ~/jeff/.bash_profile; if [ -f ~/.bash_profile ]; then source ~/.bash_profile; fi;  if [ -f ~/.bashrc ]; then source ~/.bashrc; fi }
 
 function gv() { git pull; sleep .5; vim "$1"; }
 
