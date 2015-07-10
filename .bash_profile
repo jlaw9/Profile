@@ -67,8 +67,8 @@ Mercury="ionadmin@192.168.200.41"
 alias mercury="ssh ionadmin@192.168.200.41"
 Triton="ionadmin@192.168.200.131"
 alias triton="ssh ionadmin@192.168.200.131"
-Triton2="ionadmin@12.32.211.40"
-alias triton2="ssh ionadmin@12.32.211.40"
+Triton2="ionadmin@104.226.2.244"
+alias triton2="ssh ionadmin@104.226.2.244"
 
 #PGM servers
 PGM="ionadmin@130.132.19.237"
