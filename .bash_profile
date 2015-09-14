@@ -1,6 +1,7 @@
 #Jeff's bash profile
 
 set -o vi
+# in the file ~/.inputrc, add the line "set editing-mode vi" for vim-like commands in prompts like python
 shopt -s histappend
 HISTFILESIZE=1000000
 HISTSIZE=1000000
