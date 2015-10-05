@@ -47,6 +47,7 @@ alias ll='ls -alh'
 alias wl='wc -l *'
 alias Q='exit'
 alias v='vim -O'
+alias V='vim -R'
 alias em='emacs -nw'
 alias t='tail -f'
 function c() { cd "$1"; ls ;}
