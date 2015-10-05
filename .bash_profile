@@ -38,9 +38,9 @@ fi
 source ~/jeff/Profile/.bash_colors
 
 # quick commands
-alias b='cd .. && ls'
-alias bb='cd ../.. && ls'
-alias B="cd - && ls"
+alias b='cd ..; ls'
+alias bb='cd ../..; ls'
+alias B="cd -; ls"
 alias cls='clear; ls'
 alias ll='ls -alh'
 alias wl='wc -l *'
@@ -48,37 +48,37 @@ alias Q='exit'
 alias v='vim -O'
 alias em='emacs -nw'
 alias t='tail -f'
-function c() { cd "$1" && ls ;}
+function c() { cd "$1"; ls ;}
 
 function create() { echo "alias $1=\"c $PWD\"" >> ~/jeff/.bash_profile; if [ -f ~/.bash_profile ]; then source ~/.bash_profile; fi;  if [ -f ~/.bashrc ]; then source ~/.bashrc; fi }
 
 function gv() { git pull; sleep .5; vim "$1"; }
 
 # templates
-alias template='cp ~/jeff/Profile/template.py . && vim template.py'
+alias template='cp ~/jeff/Profile/template.py .; vim template.py'
 alias edit_template='vim ~/jeff/Profile/template.py'
-alias qsub_template="cp ~/jeff/Profile/qsub_template.sh . && vim qsub_template.sh"
+alias qsub_template="cp ~/jeff/Profile/qsub_template.sh .; vim qsub_template.sh"
 alias edit_qsub_template="vim ~/jeff/Profile/qsub_template.sh"
 
 # update this profile
 alias p2='cd ~/jeff/Profile/'
-alias b2='vim ~/jeff/Profile/.bash_profile && source ~/jeff/Profile/.bash_profile'
-alias c2='vim ~/jeff/Profile/.bash_colors && source ~/jeff/Profile/.bash_colors'
+alias b2='vim ~/jeff/Profile/.bash_profile; source ~/jeff/Profile/.bash_profile'
+alias c2='vim ~/jeff/Profile/.bash_colors; source ~/jeff/Profile/.bash_colors'
 alias s2='source ~/jeff/Profile/.bash_profile'
 
 # github dir and commands
 DEV_REPO="https://jlaw9@github.com/jlaw9/TRI_Dev.git"
 TRI_REPO="https://jlaw9@github.com/jlaw9/TRI_Scripts.git"
 LEGOS_REPO="https://jlaw9@github.com/dyermd/legos.git"
-alias gp="cd ~/jeff/Profile && git pull && s2 && cd -"
+alias gp="cd ~/jeff/Profile; git pull; s2; cd -"
 alias ga="cd ~/jeff/Profile; \
 	git pull; \
 	git commit -a -m 'update'; \
 	git push --repo \"https://jlaw9@github.com/jlaw9/Profile.git\"; \
 	git pull; cd -"
-alias gita="git pull && \
-	git commit -a -m 'update' && \
-	git push && \
+alias gita="git pull; \
+	git commit -a -m 'update'; \
+	git push; \
 	git pull"
 
 # Directories
