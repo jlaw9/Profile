@@ -18,6 +18,7 @@ function emsvn {
 	svn ci -m "updated $1"
 }
 
+# copy a file to my vm 
 function vmscp {
 	scp $1 jeffl@wyatt.cs.vt.edu:~/Downloads
 	ssh jeffl@wyatt.cs.vt.edu "scp -P 3025 ~/Downloads/$1 jeffvm@127.0.0.1:~/Downloads; exit"
