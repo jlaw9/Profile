@@ -1,7 +1,29 @@
 #Jeff's bash profile
 
+# Various aliases
+alias wyatt='ssh jeffl@wyatt.cs.vt.edu'
+alias wyattx='ssh -X jeffl@wyatt.cs.vt.edu'
+alias bioinfo='ssh jeffl@bioinformatics.cs.vt.edu'
+alias bioinfox='ssh -X jeffl@bioinformatics.cs.vt.edu'
+alias bioinfo2='ssh jeffl@cowcreamer.cs.vt.edu'
+alias bioinfo2x='ssh -X jeffl@cowcreamer.cs.vt.edu'
+alias bioinfo3='ssh jeffl@agatha.cs.vt.edu'
+alias bioinfo3x='ssh -X jeffl@agatha.cs.vt.edu'
+
+# svn dir anc dommands 
+function emsvn {
+# How does svn know which files you want to add and which you don't?
+	svn up; 
+	emacs -nw $1;
+	svn ci -m "updated $1"
+}
+
+function vmscp {
+	scp $1 jeffl@wyatt.cs.vt.edu:~/Downloads
+	ssh jeffl@wyatt.cs.vt.edu "scp -P 3025 ~/Downloads/$1 jeffvm@127.0.0.1:~/Downloads; exit"
+}
+
 set -o vi
-# in the file ~/.inputrc, add the line "set editing-mode vi" for vim-like commands in prompts like python
 shopt -s histappend
 HISTFILESIZE=1000000
 HISTSIZE=1000000
@@ -19,11 +41,12 @@ source ~/jeff/Profile/.bash_colors
 alias b='cd .. && ls'
 alias bb='cd ../.. && ls'
 alias B="cd - && ls"
-alias cls='clear && pwd && ls'
+alias cls='clear; ls'
 alias ll='ls -alh'
 alias wl='wc -l *'
 alias Q='exit'
 alias v='vim -O'
+alias em='emacs -nw'
 alias t='tail -f'
 function c() { cd "$1" && ls ;}
 
