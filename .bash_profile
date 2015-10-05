@@ -82,6 +82,9 @@ alias gita="git pull; \
 	git push; \
 	git pull"
 
+# --- git commands to remember ----
+# git config --global credential.helper cache
+
 # Directories
 QC_DIR="/rawdata/legos/scripts/QC"
 
