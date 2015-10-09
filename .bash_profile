@@ -9,6 +9,7 @@ alias bioinfo2='ssh jeffl@cowcreamer.cs.vt.edu'
 alias bioinfo2x='ssh -X jeffl@cowcreamer.cs.vt.edu'
 alias bioinfo3='ssh jeffl@agatha.cs.vt.edu'
 alias bioinfo3x='ssh -X jeffl@agatha.cs.vt.edu'
+alias ems='vim ~/.emacs.d/init.el'
 
 # svn dir anc dommands 
 function emsvn {
